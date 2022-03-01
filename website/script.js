@@ -1,36 +1,56 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBK0B5-BLjuFmNb7-HSi18zW2Wxr1Tl7KU",
-  authDomain: "soundmcbit.firebaseapp.com",
-  databaseURL: "https://soundmcbit-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "soundmcbit",
-  storageBucket: "soundmcbit.appspot.com",
-  messagingSenderId: "847266337275",
-  appId: "1:847266337275:web:749e3fd6f633217990bb5e"
+  apiKey: "AIzaSyA39NlaeFyq6fqILfkchBGYmjmMciDjJhg",
+  authDomain: "yeelight-9c8ad.firebaseapp.com",
+  databaseURL: "https://yeelight-9c8ad-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "yeelight-9c8ad",
+  storageBucket: "yeelight-9c8ad.appspot.com",
+  messagingSenderId: "752726940415",
+  appId: "1:752726940415:web:da97c9d31b0ab871fb0aca",
+  measurementId: "G-ED5SEFK2PY"
 };
+
 firebase.initializeApp(firebaseConfig);
 
-var sumdata =  []
-var allint = []
-var e = []
-// var soundData = [];
-var myDB = firebase.database().ref('Sound');
-// var recordDisplay = soundData.push(myDB);
-// document.getElementById("soundList").innerHTML+= recordDisplay+"<br>";
 
+var myDB = firebase.database().ref('Light');
 
-// data.val()
-myDB.on('child_added', displayRecords);
+// myDB.on("child_added", displayRecords);
 
 
 
-function displayRecords(data) {
+function lightOn() {
+  var stateVar = 'on';
+  var time = Date().toLocaleString();
+   // Creates a node
+  var myDB = firebase.database().ref('switch on');
+  // Creates a patient node
+  var addRecord = myDB.child('light state').push();
+  record = {
+    'Light state' : stateVar,
+    'time' : time
+  }
 
-  var record = data.val();
-  var recordDisplay = record.Sound;
-  let e = parseInt(recordDisplay);
-  let allint = sumdata += e;
-  document.getElementById("soundData").innerHTML+= recordDisplay+",  ";
+  addRecord.set(record);
+  
+  alert('light on');
+ 
+}
 
 
-};
-document.getElementById("soundAverage").innerHTML+= e+',';
+function lightOff() {
+  var stateVar = 'off';
+  var time = Date().toLocaleString();
+   // Creates a node
+  var myDB = firebase.database().ref('switch off');
+  // Creates a patient node
+  var addRecord = myDB.child('light state').push();
+  record = {
+    'Light state' : stateVar,
+    'time' : time
+  }
+
+  addRecord.set(record);
+  
+  alert('light off');
+ 
+}

@@ -19,9 +19,9 @@
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn"> tagairtí </a>
     <div class="dropdown-content">
-      <a href="https://www.theguardian.com/lifeandstyle/2018/jul/03/sonic-doom-noise-pollution-kills-heart-disease-diabetes">Sonic doom(guardian)</a>
-      <a href="https://www.hear-it.org/school-noise-detrimental-hearing-and-learning">Average classroom noise level(hear it) </a>
-      <a href="https://pubmed.ncbi.nlm.nih.gov/33270617">survey of teen noise exposure(pub med) </a>
+      <a href="https://github.com/shyamvalsan/YeelightController ">yeelight bash commands(github)</a>
+      <a href="https://tutorial.cytron.io/2020/12/09/send-data-to-firebase-using-raspberry-pi/ "> firebase raspberry pi tutorial </a>
+      <a href="https://phoenixnap.com/kb/enable-ssh-raspberry-pi ">raspberry pi ssh (tutorial) </a>
     </div>
   </li>
 </ul>
@@ -33,8 +33,8 @@
     <div id="myDiv" style= "width:90%">
       
     </div>
-    <div id='soundData'><h2></h2></div>
-    <div id='soundAverage'><h2></h2></div>
+    <div id='lightData'><h2></h2></div>
+    <div id='lightAverage'><h2></h2></div>
 
     
   </body>

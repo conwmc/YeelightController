@@ -9,9 +9,9 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
-  <script type ="module" src="script.js"></script>
+  <script src="script.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <ul>
   <li><a href="#home">abhaile</a></li>
@@ -19,22 +19,24 @@
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn"> tagairtí </a>
     <div class="dropdown-content">
-      <a href="https://github.com/shyamvalsan/YeelightController ">yeelight bash commands(github)</a>
-      <a href="https://tutorial.cytron.io/2020/12/09/send-data-to-firebase-using-raspberry-pi/ "> firebase raspberry pi tutorial </a>
-      <a href="https://phoenixnap.com/kb/enable-ssh-raspberry-pi ">raspberry pi ssh (tutorial) </a>
+      <a href="https://www.theguardian.com/lifeandstyle/2018/jul/03/sonic-doom-noise-pollution-kills-heart-disease-diabetes">Sonic doom(guardian)</a>
+      <a href="https://www.hear-it.org/school-noise-detrimental-hearing-and-learning">Average classroom noise level(hear it) </a>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/33270617">survey of teen noise exposure(pub med) </a>
     </div>
   </li>
 </ul>
   <body>
-    <h1><centre>Concorp lighting incorperated</centre></h1>
+    <h1><centre>Diffusion</centre></h1>
 
     <p>Tá sé i gceist agam raspberry pi a úsáid mar chóras neadaithe le soilse cliste a smachtú.Tá sé i gceist agam ssh nó vnc a úsáid  </p>
     <hr>
     <div id="myDiv" style= "width:90%">
       
     </div>
-    <div id='lightData'><h2></h2></div>
-    <div id='lightAverage'><h2></h2></div>
+    <button onclick="lightOn()">Light on!</button>
+    <button onclick="lightOff()">Light off!</button>
+    <div id='soundData'><h2></h2></div>
+    <div id='soundAverage'><h2></h2></div>
 
     
   </body>
